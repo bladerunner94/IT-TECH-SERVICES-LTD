@@ -1,60 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IT TECH SERVICES LTD - Website Coming Soon</title>
 <style>
-body, html {
-  height: 100%;
-  margin: 0;
-}
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    background-image: url('holding.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
 
-.bgimg {
-  background-image: url('holding.jpg');
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  color: white;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 25px;
-}
+  .content {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+  }
 
-.topleft {
-  position: absolute;
-  top: 0;
-  left: 16px;
-}
+  h1 {
+    font-size: 36px;
+  }
 
-.bottomleft {
-  position: absolute;
-  bottom: 0;
-  left: 16px;
-}
+  p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
 
-.middle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
+  .contact {
+    margin-top: 20px;
+  }
 
-hr {
-  margin: auto;
-  width: 40%;
-}
+  .contact a {
+    color: #ffcc00; /* Change color to yellow */
+    text-decoration: none;
+  }
+
+  .contact a:hover {
+    text-decoration: underline;
+  }
 </style>
+</head>
 <body>
 
-<div class="bgimg">
-  <div class="topleft">
-    <p>IT TECH SERVICES LTD</p>
-  </div>
-  <div class="middle">
-    <h1>Website coming soon!</h1>
-    <hr>
-    <p>Thank you for visiting IT TECH SERVICES LTD! We are specialised in IT solutions, services, like bringing cloud solutions to your business or providing day to day IT support in various projects. If you have any further questions, please contact us in the below email address.</p>
-  </div>
-  <div class="bottomleft">
-    <p>Contact details: info@ittechservicesltd.co.uk </p>
+<div class="container">
+  <div class="content">
+    <div>
+      <h1>IT TECH SERVICES LTD</h1>
+      <h2>Website coming soon!</h2>
+      <hr>
+      <p>Thank you for visiting IT TECH SERVICES LTD! We specialize in IT solutions and services, such as bringing cloud solutions to your business or providing day-to-day IT support for various projects. Our services focus on both small and large businesses, as well as individual personnel. If you have any further questions, please contact us at the email address below.</p>
+    </div>
+    <div class="contact">
+      <p>Contact details: <a href="mailto:info@ittechservicesltd.co.uk">info@ittechservicesltd.co.uk</a></p>
+    </div>
   </div>
 </div>
 
