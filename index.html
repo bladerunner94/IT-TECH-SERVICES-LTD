@@ -86,6 +86,7 @@
     width: 100%; /* Full width */
     position: fixed;
     top: 0;
+    left: 0;
     z-index: 999;
   }
 
@@ -160,6 +161,8 @@
 <body>
 
 <div class="container">
+  <!-- Empty div for scrolling to the top -->
+  <div id="top"></div>
 
   <header>
     <h1>It Tech Services Ltd</h1>
@@ -167,8 +170,8 @@
   </header>
 
   <!-- Navigation Menu -->
-  <nav id="navbar">
-    <a href="#home">Home</a>
+  <nav>
+    <a href="#top">Home</a> <!-- Modified href attribute -->
     <a href="#about">About Us</a>
     <a href="#services">Our Services</a>
     <a href="#pricing">Pricing</a>
@@ -230,7 +233,9 @@
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
 
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
+      const target = document.querySelector(this.getAttribute('href') || 'html');
+      window.scrollTo({
+        top: target.offsetTop,
         behavior: 'smooth'
       });
     });
