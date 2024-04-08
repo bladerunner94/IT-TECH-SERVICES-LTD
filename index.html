@@ -3,49 +3,64 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>IT TECH SERVICES LTD - Website Coming Soon</title>
+<title>IT TECH SERVICES LTD</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 <style>
   body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('holding.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #f7f7f7;
   }
   
-  .overlay {
-    background-color: rgba(0, 0, 0, 0.7); /* Darken the background */
-    color: #fff; /* Text color changed to white */
-    padding: 50px;
-    border-radius: 10px;
-    max-width: 800px;
-    margin: 50px auto;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
   }
-
-  h1, h2, p {
+  
+  header {
     text-align: center;
-    color: #fff; /* Text color changed to white */
+    margin-top: 50px;
   }
-
-  h2 {
-    color: #ccc; /* Lighter color for subheadings */
+  
+  header h1 {
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  header h2 {
+    color: #666;
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  
+  .section {
+    background-color: #fff;
+    padding: 50px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+  }
+  
+  .section h2 {
+    color: #333;
+    font-size: 28px;
     margin-bottom: 20px;
   }
-
-  p {
+  
+  .section p {
+    color: #666;
+    font-size: 16px;
     line-height: 1.6;
   }
-
-  .contact {
-    margin-top: 20px;
-  }
-
+  
   .contact p {
-    color: #ccc; /* Lighter color for contact details */
-    text-align: center;
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 10px 0;
   }
 
   .contact a {
@@ -56,17 +71,146 @@
   .contact a:hover {
     text-decoration: underline;
   }
+
+  /* Navigation Styles */
+  nav {
+    background-color: #333;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+  }
+
+  nav a:hover {
+    background-color: #555;
+  }
+
+  /* Contact Form Styles */
+  .contact-form {
+    margin-top: 50px;
+  }
+
+  .contact-form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .contact-form textarea {
+    height: 150px;
+  }
+
+  .contact-form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .contact-form input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+  .contact-details {
+    margin-top: 30px;
+  }
+
+  .copyright {
+    text-align: center;
+    margin-top: 30px;
+    color: #666;
+    font-size: 14px;
+  }
+
+  /* Microsoft Forms Embed Styles */
+  .ms-form-embed {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
 </style>
 </head>
 <body>
 
-<div class="overlay">
-  <h1>IT TECH SERVICES LTD</h1>
-  <h2>Website coming soon!</h2>
-  <p>Thank you for considering IT TECH SERVICES LTD. Our company specializes in delivering comprehensive IT solutions tailored to meet the unique needs of businesses. From implementing cutting-edge cloud solutions to delivering reliable day-to-day IT support across a spectrum of projects, we are committed to excellence. Our services are designed to cater to the diverse requirements of both small and large enterprises, as well as individual professionals. Should you have any inquiries or require further assistance, please do not hesitate to reach out to us via the email address provided below.</p>
-  <div class="contact">
-    <p>Contact details: <a href="mailto:info@ittechservicesltd.co.uk">info@ittechservicesltd.co.uk</a></p>
+<div class="container">
+
+  <header>
+    <h1>It Tech Services Ltd</h1>
+    <h2>Your Reliable IT Solutions Provider</h2>
+  </header>
+
+  <!-- Navigation Menu -->
+  <nav>
+    <a href="#about">About Us</a>
+    <a href="#services">Our Services</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact">Contact Us</a>
+  </nav>
+
+  <!-- Sections -->
+  <div class="section" id="about">
+    <h2>About Us</h2>
+    <p>It Tech Services Ltd is dedicated to assisting startups, new businesses, existing small and large enterprises, as well as individual persons with IT-related activities. We specialize in delivering comprehensive IT solutions tailored to meet the unique needs of our clients. Our services range from providing reliable day-to-day IT support, implementing cutting-edge cloud solutions, to hardware and software fixes and implementation. We are committed to excellence and aim to cater to the diverse requirements of our clients.</p>
   </div>
+
+  <div class="section" id="services">
+    <h2>Our Services</h2>
+    <p>We offer a wide range of services including:</p>
+    <ul>
+      <li>Cloud Solutions Implementation</li>
+      <li>Network Infrastructure Setup</li>
+      <li>Data Security and Backup Solutions</li>
+      <li>IT Consultancy</li>
+      <li>And many more...</li>
+    </ul>
+  </div>
+
+  <div class="section" id="pricing">
+    <h2>Pricing</h2>
+    <p>Our pricing plans are tailored to suit your business needs. Contact us for a customized quote.</p>
+  </div>
+
+  <div class="section contact" id="contact">
+    <h2>Contact Us</h2>
+    <!-- Microsoft Forms Embed -->
+    <div class="ms-form-embed">
+      <iframe width="640px" height="480px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=o66ZKT2rLUC1QEpW4aaeF9nLHMzGw6dBnjLt9QmsJlFUMDVJWVpUU1IzMTdBOFBKQjBOTFZGNVdXTi4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+    </div>
+    <!-- Previous Contact Us Content -->
+    <div class="contact-details">
+      <p>Email: <a href="mailto:info@ittechservicesltd.co.uk">info@ittechservicesltd.co.uk</a></p>
+      <p>Phone: +44 7463 315620</p>
+      <p><a href="https://wa.me/447463315620">WhatsApp Business</a></p>
+      <p>Facebook: <a href="https://www.facebook.com/people/It-Tech-Services-Ltd/61557931167571/">IT Tech Services Ltd</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/company/it-tech-services-ltd">IT Tech Services Ltd</a></p>
+    </div>
+    <div class="contact-details">
+      <p style="margin-bottom: 10px;">VAT Number: 461839273</p>
+      <p>Company Registration Number: 15513675</p>
+    </div>
+  </div>
+
+  <div class="copyright">
+    <p>© Copyright 2024 It Tech Services Ltd</p>
+  </div>
+
 </div>
 
 </body>
