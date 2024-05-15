@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><!-- Google tag (gtag.js) -->
+<head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-B6F905BG9Y"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -8,7 +8,8 @@
   gtag('js', new Date());
 
   gtag('config', 'G-B6F905BG9Y');
-</script><script
+</script>
+<script
   type="text/javascript"
   src="https://app.termly.io/resource-blocker/09b25284-1d83-471e-9e41-941bf202d3de?autoBlock=on"
 ></script>
@@ -28,37 +29,36 @@
     background-attachment: fixed;
     line-height: 1.6;
   }
-  
+
   .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.9); /* Background color with opacity */
   }
-  
+
   header {
     text-align: center;
     margin-top: 50px;
   }
-  
+
   header h1 {
     color: #333;
     font-size: 36px;
     margin-bottom: 10px;
   }
-  
+
   header h2 {
     color: #666;
     font-size: 24px;
     margin-bottom: 30px;
   }
-  
+
   header img {
-    width: 150px; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
-    margin-bottom: 20px; /* Adjust as needed */
+    width: auto; /* Adjust the width as needed */
+    height: 490px; /* Maintain aspect ratio */
   }
-  
+
   .section {
     padding: 50px 20px;
     border-radius: 5px;
@@ -66,23 +66,23 @@
     margin-top: 70px; /* Increased margin for better separation */
     background-color: rgba(255, 255, 255, 0.9); /* Background color with opacity */
   }
-  
+
   .section h2 {
     color: #333;
     font-size: 28px;
     margin-bottom: 20px;
     transition: color 0.3s ease; /* Added transition for hover effect */
   }
-  
+
   .section h2:hover {
     color: #007bff; /* Changed color on hover */
   }
-  
+
   .section p {
     color: #666;
     font-size: 16px;
   }
-  
+
   .contact p {
     color: #666;
     font-size: 16px;
@@ -102,13 +102,30 @@
   /* Navigation Styles */
   nav {
     background-color: #333;
-    text-align: center;
-    padding: 10px 0;
-    width: 100%; /* Full width */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
     position: fixed;
     top: 0;
     left: 0;
+    width: 100%;
     z-index: 999;
+  }
+
+  nav .logo-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  nav .logo-container img {
+    height: 30px; /* Adjust the height as needed */
+  }
+
+  nav .nav-links {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
   }
 
   nav a {
@@ -203,12 +220,16 @@
   </header>
 
   <nav>
-    <img src="toplogo.png" alt="Logo" class="logo" height="40">
-    <a href="#top">Home</a>
-    <a href="#about">About Us</a>
-    <a href="#services">Our Services</a>
-    <a href="#pricing">Pricing</a>
-    <a href="#contact">Contact Us</a>
+    <div class="logo-container">
+      <img src="toplogo.png" alt="Logo">
+    </div>
+    <div class="nav-links">
+      <a href="#top">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#services">Our Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact Us</a>
+    </div>
   </nav>
 
   <div class="section" id="about">
